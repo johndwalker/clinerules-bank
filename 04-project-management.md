@@ -36,6 +36,5 @@ When prompted to complete the next step of a specific plan, follow these steps:
 - Please use the sequentialthinking mcp tool to plan any changes you make.
 - When finished, please mark the item complete on the checklist. 
 - If you determine that the next item on the checklist has already been completed, then mark it as complete and your work is finished!
-- It is critical that you follow all coding best practices as you execute the plan.
+- It is critical that you follow [all coding best practices](./05-coding-best-practices.md) as you execute the plan.
 - Before implementing, validate the plan's solution.
-
