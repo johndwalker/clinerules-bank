@@ -61,13 +61,13 @@ flowchart TD
    - Status of all planned feature requests found in planning directory
 
 7. `@error-documentation.md`
-  - During your interaction, if you find a fix to a mistake in this project or a correction you received reusable, you should take note in the @error-documentation.md file so you will not make the same mistake again.
-  - Known issues: their state, context, and resolution
+   - During your interaction, if you find a fix to a mistake in this project or a correction you received reusable, you should take note in the @error-documentation.md file so you will not make the same mistake again.
+   - Known issues: their state, context, and resolution
 
 8. `@lessons-learned.md`
-  - Learning journal for each project
-  - It captures important patterns, preferences, and project intelligence
-  - It is detailed in @lessons-learned.md
+   - Learning journal for each project
+   - It captures important patterns, preferences, and project intelligence
+   - It is detailed in @lessons-learned.md
 
 ### Additional Context
 Create additional files/folders within memory-bank/ when they help organize:
