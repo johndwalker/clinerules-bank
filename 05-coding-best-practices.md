@@ -99,6 +99,9 @@ Always write TEST after IMPLEMENTATION.
 ### Step 6: Optimize the implemented codes
 - Optimize the implemented code, after all changes are tested and verified.
 
+### Step 7: Document completed work
+- Update the relevant checklist item in the plan document following the project management['execute-the-plan'](./04-project-management.md#execute-the-plan) instructions, including updating any relevant gitlab issues and epics.
+
 ## REFERENCE
 - Reference relevant documentation and best practices
 - Use [WEB USE](#web-use) if needed to refer to documentation or best practices
