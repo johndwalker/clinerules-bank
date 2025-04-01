@@ -69,7 +69,8 @@ follow all best coding practices as outlined in this document and as determined 
 - Provide a proposal that specifies: 1) what files, functions, or lines of code are being changed; 2) why the change is necessary (i.e. bug fix, improvement or new feature); 3) all of the directly impacted modules or files; 4) potential side effects; 5) a detailed explanation of any tradeoffs.
 
 ### Step 3: MAKE CHANGES
-1. Document Current State in files specified by @memory.mdc
+1. When implementing a plan, always create a new git branch and do all work in that branch. Never work in the main (or master) branch.
+- Document Current State in files specified by @memory.mdc
 - What’s currently working?
 - What’s the current error/issue?
 - Which files will be affected?
@@ -95,6 +96,7 @@ Always write TEST after IMPLEMENTATION.
 ### Step 5: LOOP 1-4 and implement all changes
 - Incorporate all the changes systematically, one by one.
 - Verify the changes and test them one by one.
+- When complete, commit the changes to active branch (not main or master).
 
 ### Step 6: Optimize the implemented codes
 - Optimize the implemented code, after all changes are tested and verified.
