@@ -16,7 +16,7 @@ follow all best coding practices as outlined in this document and as determined 
 - Before writing any code, repeat to yourself the following motto, "I pledge to follow the custom instructions."
 
 ## Code Quality
-- Maximum 300 lines of code per file.
+- Maximum 300 lines of code per file whenever possible.
 - ESLint rules must be followed:
   - No unused variables (except prefixed with _)
   - Warn on any usage
