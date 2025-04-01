@@ -17,6 +17,7 @@ When prompted to plan a new feature, follow these steps:
 - Ensure that each task is well-defined, thouroughly detailed, and clear on how to execute it.
 - As you plan, any written code must follow the Coding Best Practices.
 - Follow the guidelines in [CLARIFICATION](./05-coding-best-practices#clarification).
+- When finished planning, prompt the user if they would like to create a linked epic or issue for the plan. Track any created issue id's and make note of them next to the relevant checklist items. If an epic is created, track the epic id and note it in the plan. Follow the guidelines in [synchronize with gitlab](#synchronize-with-gitlab) as you do so.
 
 ## Presentation
 
@@ -34,7 +35,8 @@ When prompted to complete the next step of a specific plan, follow these steps:
 - Read the plan and follow the prompt as instructed.
 - However, limit your current focus to the first unfinished item in the '## Implementation Checklist', aka only accomplish that single task. If there are subtasks, only complete a single subtask. No exceptions! It is imperative that you only complete a single task.
 - Please use the sequentialthinking mcp tool to plan any changes you make.
-- When finished, please mark the item complete on the checklist. 
+- When finished, please mark the item complete on the checklist.
+- As checklist items are completed, update the relevant gitlab issue following the guidelines in [update an issue](#update-an-issue).
 - If you determine that the next item on the checklist has already been completed, then mark it as complete and your work is finished!
 - It is critical that you follow [all coding best practices](./05-coding-best-practices.md) as you execute the plan.
 - Before implementing, validate the plan's solution.
@@ -44,13 +46,13 @@ When prompted to complete the next step of a specific plan, follow these steps:
 Please leverage the tools make available to you by the gitlab mcp server to synchronize the plans and progress with associated epics and/or issues in Gitlab. Following are the different actions that you may take in order to accomplish this.
 
 ### Create an issue
-When prompted by the user, you can create an issue in a specified project. The issue should be related to a specific plan or a specific task within a plan. It should be assigned to the user unless otherwise specified. If the user doesn't specify this information, please stop and ask them to provide all needed information. The description of the issue should simply mirror what is already written in the specified plan. Include all relevant information as detailed in the specified plan. Format the description using markdown. Unless otherwise specified, assign the 'P::3' tag to the issue. As you create issues, track the issue's ID in your memory banks for ease of future updates.
+When prompted by the user, you can create an issue in a specified project. The issue should be related to a specific plan or a specific task within a plan. If the task has subtasks, define them as checklist items in the issue's description. It should be assigned to the user unless otherwise specified. If the user doesn't specify this information, please stop and ask them to provide all needed information. The description of the issue should simply mirror what is already written in the specified plan. Include all relevant information as detailed in the specified plan. Format the description using markdown. Unless otherwise specified, assign the 'P::3' tag to the issue. As you create issues, track the issue's ID in your memory banks for ease of future updates.
 
 ### Create an epic
-When prompted by the user, you can create an epic in a specified project. The epic should be related to a specific plan. The epic should be assigned a due date. Assign it the "IT" and "P::4" tags unless otherwise specified. If the user doesn't specify this information, please stop and ask them to provide all needed information. The description of the epic should simply mirror what is already written in the specified plan. Include all relevant information as detailed in the specified plan. Format the description using markdown. Unless otherwise specified, assign the 'P::3' tag to the epic. As it makes sense to do so, create linked issues for tasks. Follow the guidelines of [create an issue](#create-an-issue) for linked issues.  As you create epics and linked issues, track the epic's ID and any linked issue IDs in your memory banks for ease of future updates.
+When prompted by the user, you can create an epic in a specified project. The epic should be related to a specific plan. The epic should be assigned a due date. Assign it the "IT" and "P::4" tags unless otherwise specified. If the user doesn't specify this information, please stop and ask them to provide all needed information. The description of the epic should simply mirror what is already written in the specified plan. Include all relevant information as detailed in the specified plan. Format the description using markdown. Unless otherwise specified, assign the 'P::3' tag to the epic. Create linked issues for each task in the Implementation Checklist, with subtasks defined in the linked issue as checklist items in the description. Follow the guidelines of [create an issue](#create-an-issue) for linked issues.  As you create epics and linked issues, track the epic's ID and any linked issue IDs in your memory banks for ease of future updates.
 
 ### Update an epic
 As tasks and plans are completed, you should update epics and linked issues with detailed comments such as explaining the work that was done or how the problem was solved. If all related linked issues are closed and all tasks completed, ask the user if they want to close the epic. You do not need to be prompted by the user to update epics, but do provide a summary of the update.
 
 ### Update an issue
-As tasks are completed, please update the related issue in Gitlab with a detailed comment explaining the work that was done and/or how the problem was solved. If all tasks of an issue are complete, ask the user if they would like to close the issue. You do not need to be prompted by the user to update issues, but do provide a summary of the update.
+As tasks are completed, please update the related issue in Gitlab with a detailed comment explaining the work that was done and/or how the problem was solved. If all tasks of an issue are complete, ask the user if they would like to close the issue. You do not need to be prompted by the user to update issues, but do provide a summary of the update. As issues linked to epics are closed, [update the epic](#update-an-epic) with a summary of the work that was done on that issue.
